@@ -4,8 +4,6 @@
 
 A fast, lightweight desktop application for instant currency conversion and profit margin calculations. Built with Python and CustomTkinter.
 
-**[GitHub Repository](https://github.com/ts7mur/currency-calculator)**
-
 ## Features
 
 ✨ **Currency Converter** – Real-time conversion across 160+ currencies using live exchange rates
@@ -35,28 +33,10 @@ A fast, lightweight desktop application for instant currency conversion and prof
    - Markup percentage
    - Price needed to hit target margin
 
-## Technical Details
-
-- **Language:** Python 3
-- **UI Framework:** CustomTkinter
-- **Exchange Rates:** Live API (open.er-api.com)
-- **Data Privacy:** No tracking, no data collection
-- **License:** MIT
-
-## Run From Source
-
-If you want to run the code directly:
-
-```bash
-pip install -r requirements.txt
-python3 app.py
-```
-
 ## Why I Built This
 
 I was tired of jumping between currency converters and margin calculators during business calculations. Built this to be instant, offline, and all-in-one.
 
-## License
 
 MIT License – feel free to use, modify, and share
 
