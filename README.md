@@ -1,45 +1,38 @@
-# LINK TO THE PROGRAM ONLINE - https://currencycalculatorr.streamlit.app/
-
 # Currency & Profit Calculator
 
-A fast, lightweight desktop application for instant currency conversion and profit margin calculations. Built with Python and CustomTkinter.
+A compact business utility for currency conversion and margin planning. It keeps two repetitive calculations in one simple interface.
+
+[Open the live application](https://currencycalculatorr.streamlit.app/)
 
 ## Features
 
-✨ **Currency Converter** – Real-time conversion across 160+ currencies using live exchange rates
+- Convert between a broad set of currencies using current exchange-rate data
+- Calculate profit, margin and markup from cost and selling price
+- Find the selling price required to reach a target margin
+- Use a lightweight browser interface with no local setup
 
-📊 **Profit Calculator** – Instantly calculate profit margins, markups, and target pricing
+## Stack
 
-⚡ **Fast & Instant** – All calculations happen instantly. No websites. No waiting.
+- Python
+- Streamlit
+- Exchange-rate API integration
+- Local rate fallback data
 
-🔒 **Offline-Ready** – Works offline after the first load
+## Run locally
 
-🎨 **Modern UI** – Clean dark interface designed for business use
+```bash
+pip install streamlit requests
+streamlit run app.py
+```
 
-## How to Use
+## Structure
 
-### Currency Converter
-1. Enter the amount you want to convert
-2. Select source and target currencies from dropdowns
-3. Click "Convert" to see instant results
+- `app.py` contains the Streamlit interface
+- `functions.py` contains conversion and profit-calculation logic
+- `rates.json` provides local currency data
 
-### Profit Calculator
-1. Enter your cost price
-2. Enter your selling price
-3. Set your target profit margin %
-4. Click "Calculate" to see:
-   - Actual profit amount
-   - Margin percentage
-   - Markup percentage
-   - Price needed to hit target margin
+## Why I built it
 
-## Why I Built This
+Currency conversion and margin planning are usually handled in separate tools. This project turns both into one fast workflow designed around the decisions a seller makes repeatedly.
 
-I was tired of jumping between currency converters and margin calculators during business calculations. Built this to be instant, offline, and all-in-one.
-
-
-MIT License – feel free to use, modify, and share
-
----
-
-**GitHub:** https://github.com/ts7mur/currency-calculator
+Licensed under the MIT License.
